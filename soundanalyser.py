@@ -28,7 +28,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.image("https://raw.githubusercontent.com/lxndrrms/soundanalyser/main/Logo_menu.webp", width=450)
+st.image("https://i0.wp.com/00r2e9.p3cdn1.secureserver.net/wp-content/uploads/2024/01/Logo_menu.png", width=450)
 
 # Título do sistema
 st.title("SoundAnalyser")
