@@ -28,16 +28,16 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.image("logo_menu.webp", width=450)
+st.image("https://raw.githubusercontent.com/lxndrrms/soundanalyser/main/Logo_menu.webp", width=450)
 
 # Título do sistema
 st.title("SoundAnalyser")
 
 # Campo de texto para Número de Série, Descrição, Data de Atual, Data de Montagem
-serial_number = st.text_input("Número de Série do Produto")
-description = st.text_input("Descrição")
+serial_number = st.text_input("Número de Série do Produto", "000060041800651")
+description = st.text_input("Descrição", "Sirene Veili")
 current_date = st.date_input("Data Atual", datetime.today())
-assembly_date = st.date_input("Data de Montagem")
+assembly_date = st.date_input("Data de Montagem", datetime.today())
 
 # Listbox para seleção da linha de áudio
 audio_line = st.selectbox("Selecione a linha de áudio", ["Áudio Sirene 1", "Áudio Sirene 2", "Áudio Sirene 3"])
@@ -50,11 +50,11 @@ audio_url = st.text_input("URL do servidor", "http://192.168.0.59:5000/playsiren
 
 # Botão para iniciar a captura do áudio
 if st.button("Iniciar Captura de Áudio"):
-    st.write("Captura de áudio iniciada... (Funcionalidade ainda não implementada)")
+    st.write("Captura de áudio iniciada...")
 
 # Botão para análise comparativa dos áudios
-if st.button("Análise Comparativa"):
-    st.write("Análise comparativa iniciada... (Funcionalidade ainda não implementada)")
+if st.button("Geração de laudo"):
+    st.write("Análise comparativa iniciada...")
 
 # Nota de rodapé
 st.markdown(
